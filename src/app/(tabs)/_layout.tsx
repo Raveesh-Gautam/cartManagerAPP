@@ -21,7 +21,7 @@ export default function TabsLayout() {
             }}
         >
             <Tabs.Screen
-                name="index"
+                name="home"
                 options={{
                     title: "Home",
                     tabBarIcon: ({ focused, color, size }) => (
@@ -45,20 +45,8 @@ export default function TabsLayout() {
                     tabBarIcon: ({ color, size }) => <ShoppingCart color={color} size={size} />,
                 }}
             />
-            <Tabs.Screen
-                name="profile"
-                options={{
-                    title: "Profile",
-                    tabBarIcon: ({ color, size }) => <User color={color} size={size} />,
-                }}
-            />
-            <Tabs.Screen
-                name="welcome"
-                options={{
-                    title: "More",
-                    tabBarIcon: ({ color, size }) => <MoreHorizontal color={color} size={size} />,
-                }}
-            />
+
+
         </Tabs>
     );
 }

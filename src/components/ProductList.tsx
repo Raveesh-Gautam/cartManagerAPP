@@ -12,7 +12,7 @@ export default function ProductList({ selectedCategory, onAddToCart }: any) {
     return (
         <ScrollView horizontal showsHorizontalScrollIndicator={false} className="px-4 mt-4">
             {filteredProducts.map((product) => (
-                <ProductCard key={product.id} product={product} onAddToCart={(p) => console.log("Added:", p.name)} />
+                <ProductCard key={product.id} product={product} onAddToCart={onAddToCart} />
             ))}
         </ScrollView>
     );
